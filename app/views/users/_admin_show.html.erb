@@ -1,0 +1,5 @@
+<p>
+  Email: <%= @user.email %>
+  Role: <%= @user.user_role.tag %>
+  <%= link_to 'cancella utente', user_path(@user), data: {turbo_method: :delete, turbo_confirm: 'Are you sure?'} %>
+</p>

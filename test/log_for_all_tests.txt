@@ -1,0 +1,24 @@
+Running 3 tests in a single process (parallelization threshold is 50)
+Run options: --seed 51736
+
+# Running:
+
+entro e setto locale EN
+Rack::Handler is deprecated and replaced by Rackup::Handler
+Capybara starting Puma...
+* Version 6.4.0 , codename: The Eagle of Durango
+* Min threads: 0, max threads: 4
+* Listening on http://127.0.0.1:44211
+cambio e setto locale ES
+creo utente ugo con locale EN
+cambio e setto locale DE (utente registrato)
+.alex_2
+.1 alex
+.
+
+Finished in 19.278037s, 0.1556 runs/s, 0.6225 assertions/s.
+3 runs, 12 assertions, 0 failures, 0 errors, 0 skips
+-------------------------------------
+Results of tests:
+3 runs, 12 assertions, 0 failures, 0 errors, 0 skips
+End! 🍻 🍻 🍻 🍻 🍻 🍻

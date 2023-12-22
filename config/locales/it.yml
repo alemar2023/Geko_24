@@ -1,0 +1,23 @@
+it:
+  today: "Oggi è  il :"
+  now: "Data corta :"
+  welcome: "Ciao!"
+  service_html: "Forniamo alcuni servizi fantasiosi alle <em>brave persone</em>"
+  date:
+    formats:
+      default: "%d/%m/%Y"
+      short: "%d/%m"
+  menu_account: "Il mio Account"
+
+  account_modify_info: "Dati utente"
+  account_modify_info_text: "Modifica i tuoi dati utente"
+  account_security: "Accedi a Impostazioni e Sicurezza"
+  account_security_text: "Modifica il login, la mail o  il cellulare"
+  account_addresses: "Indirizzi"
+  account_addresses_text: "Inserisci le tue preferenze per la spedizione e consegna"
+  account_orders: "I miei ordini"
+  account_orders_text: "Traccia e/o veridfica lo stato degli ordini"
+  account_support: "Contattaci"
+  account_support_text: "Contatta il supporto tecnico per informazioni"
+  account_whishlist: "Liste dei desideri e delle preferenze"
+  account_whishlist_text: "Visualizza e modifica le tue liste dei desideri e gli articoli preferiti"

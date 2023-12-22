@@ -1,0 +1,37 @@
+<%= form_with(model: category, local: true) do |form| %>
+  <% if category.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(category.errors.count, "error") %> prohibited this category from being saved:</h2>
+
+      <ul>
+        <% category.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.fields_for :categories_i18n  do |i18n_form| %>
+      <div>
+        <%= i18n_form.label :name %>
+        <%= i18n_form.text_field :name %>
+      </div>
+      <div>
+        <%= i18n_form.label :locale %>
+        <%= i18n_form.select :locale, options_for_select(all_locales_for_select,
+                                    { include_blank: 'Select the language' }) %>
+      </div>
+      <div>
+        <%= i18n_form.label :description, style: "display: block" %>
+        <%= i18n_form.text_area :description %>
+      </div>
+
+      <div>
+        <%= i18n_form.label :description_extra, style: "display: block" %>
+        <%= i18n_form.text_area :description_extra %>
+      </div>
+    <% end %>
+    <%= form.submit %>
+  </div>
+<% end %>

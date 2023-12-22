@@ -1,0 +1,19 @@
+<% if user_signed_in? %>
+  <div class="btn-group" style="margin-right:10px;"  >
+    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="dropdown_btn">
+      <%= "#{t(:welcome)} #{current_user&.email}" %>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-lg-end">
+      <hr class="hr pad_zero"  />
+      <%= link_to t('menu_account'), user_path(current_user), class: 'dropdown-item' , :id => "user_edit_page_link"  %>
+      <hr class="hr pad_zero"  />
+      <%= link_to 'Edit profile', edit_user_path(current_user), class: 'dropdown-item' , :id => "user_edit_page_link"  %>
+      <hr class="hr pad_zero"  />
+      <%= link_to "Logout", destroy_user_session_path, method: :delete, data: { turbo_method: 'delete' }, class: 'dropdown-item' , :id => "logout_user"%>
+      <hr class="hr pad_zero"  />
+    </ul>
+  </div>
+<% else %>
+  <%= link_to "Login", new_user_session_path, class: 'btn btn-outline-success' , :id => "login_menu_btn"%>
+  <%= link_to "Registrati", new_user_registration_path, class: 'btn btn-outline-success' , :id => "register_btn" %>
+<% end %>

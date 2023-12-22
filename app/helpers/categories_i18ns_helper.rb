@@ -1,0 +1,2 @@
+module CategoriesI18nsHelper
+end

@@ -1,0 +1,21 @@
+<div id="<%= dom_id category %>">
+  <div>
+    <p>
+      <strong>Id:</strong>
+      <%= category.id %>
+    </p>
+    <p>
+      <strong>Name:</strong>
+      <%= category.categories_i18n.find_by(locale: I18n.locale)&.name if category.categories_i18n %>
+    </p>
+    <p>
+      <strong>Description:</strong>
+      <%= category.categories_i18n.find_by(locale: I18n.locale)&.description if category.categories_i18n %>
+    </p>
+    <p>
+      <strong>Description Extra:</strong>
+      <%= category.categories_i18n.find_by(locale: I18n.locale)&.description_extra if category.categories_i18n %>
+    </p>
+
+  </div>
+</div>

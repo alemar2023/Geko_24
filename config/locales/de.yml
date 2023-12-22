@@ -1,0 +1,23 @@
+de:
+  today: "Heute ist:"
+  now: "Kurzes Date:"
+  welcome: "Willkommen!"
+  service_html: "Wir bieten <em>guten Menschen</em> einige ausgefallene Dienstleistungen"
+  date:
+    formats:
+      default: "%m/%d/%Y"
+      short: "%m/%d"
+  menu_account: "Mein Konto"
+
+  account_modify_info: "Benutzerdaten"
+  account_modify_info_text: "Bearbeiten Sie Ihre Benutzerdaten"
+  account_security: "Zugriffseinstellungen und Sicherheit"
+  account_security_text: "Ändern Sie Ihr Login, Ihre E-Mail-Adresse oder Ihr Mobiltelefon"
+  account_addresses: "Adressen"
+  account_addresses_text: "Geben Sie Ihre Versand- und Lieferpräferenzen ein"
+  account_orders: "Meine Bestellungen"
+  account_orders_text: "TVerfolgen und/oder überprüfen Sie den Status von Bestellungen"
+  account_support: "Kontaktiere uns"
+  account_support_text: "Für weitere Informationen wenden Sie sich an den technischen Support"
+  account_whishlist: "Wunschzettel und Präferenzen"
+  account_whishlist_text: "Sehen und bearbeiten Sie Ihre Wunschlisten und Lieblingsartikel"

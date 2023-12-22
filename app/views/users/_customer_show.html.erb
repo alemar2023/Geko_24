@@ -1,0 +1,111 @@
+<% raise 'Missing argument @user' unless user %>
+<h2><%=  user.email %></h2>
+<h3><%= t("menu_account") %></h3>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4 col-sm-4 col-xs-4" style="background-color:transparent;">
+      <%= link_to root_path do %>
+        <div class="card mb-3 account_card">
+          <div class="row no-gutters">
+            <div class="col-md-4 ale_center">
+              <%= image_tag "message.png", class: "icons" %>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title"><%= t('account_modify_info') %></h5>
+                <p class="card-text"><%= t('account_modify_info_text') %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <div class="col-md-4 col-sm-4 col-xs-4" style="background-color:transparent;">
+      <%= link_to root_path do %>
+        <div class="card mb-3 account_card">
+          <div class="row no-gutters">
+            <div class="col-md-4 ale_center">
+              <%= image_tag "security.png", class: "icons" %>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title"><%= t('account_security') %></h5>
+                <p class="card-text"><%= t('account_security_text') %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <div class="col-md-4 col-sm-4 col-xs-4" style="background-color:transparent;">
+      <%= link_to root_path do %>
+        <div class="card mb-3 account_card">
+          <div class="row no-gutters">
+            <div class="col-md-4 ale_center">
+              <%= image_tag "address.png", class: "icons" %>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title"><%= t('account_addresses') %></h5>
+                <p class="card-text"><%= t('account_addresses_text') %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <%end %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 col-sm-4 col-xs-4" style="background-color:transparent;">
+      <%= link_to root_path do %>
+        <div class="card mb-3 account_card">
+          <div class="row no-gutters">
+            <div class="col-md-4 ale_center">
+              <%= image_tag "order.png", class: "icons" %>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title"><%= t('account_orders') %></h5>
+                <p class="card-text"><%= t('account_orders_text') %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <%end %>
+    </div>
+    <div class="col-md-4 col-sm-4 col-xs-4" style="background-color:transparent;">
+      <%= link_to root_path do %>
+        <div class="card mb-3 account_card">
+          <div class="row no-gutters">
+            <div class="col-md-4 ale_center">
+              <%= image_tag "contact_us.png", class: "icons" %>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title"><%= t('account_support') %></h5>
+                <p class="card-text"><%= t('account_support_text') %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <div class="col-md-4 col-sm-4 col-xs-4" style="background-color:transparent;">
+      <%= link_to root_path do %>
+        <div class="card mb-3 account_card">
+          <div class="row no-gutters">
+            <div class="col-md-4 ale_center">
+              <%= image_tag "whishlist.png", class: "icons" %>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title"><%= t('account_whishlist') %></h5>
+                <p class="card-text"><%= t('account_whishlist_text') %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+en:
+  today: "Today is:"
+  now: "Short date:"
+  welcome: "Welcome!"
+  service_html: "We provide some fancy services to <em> good people</em>"
+  date:
+    formats:
+      default: "%m/%d/%Y"
+      short: "%m/%d"
+  menu_account: "My account"
+  view: "View"
+  account_modify_info: "User data"
+  account_modify_info_text: "Edit your user data"
+  account_security: "Access Settings and Security"
+  account_security_text: "Change your login, email or mobile phone"
+  account_addresses: "Addresses"
+  account_addresses_text: "Enter your shipping and delivery preferences"
+  account_orders: "My orders"
+  account_orders_text: "Track and/or verify the status of orders"
+  account_support: "Contact us"
+  account_support_text: "Contact technical support for information"
+  account_whishlist: "Wishlists and preferences"
+  account_whishlist_text: "View and edit your wishlists and favorite items"

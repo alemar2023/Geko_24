@@ -1,0 +1,15 @@
+<table>
+  <thead>
+    <th>Email</th>
+    <th>Role</th>
+  </thead>
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.email %></td>
+        <td><%= user.user_role.tag %></td>
+        <td><%= link_to t(:view), user_path(user) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

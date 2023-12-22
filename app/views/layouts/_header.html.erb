@@ -1,0 +1,119 @@
+<style>
+    #element-to-toggle {
+        display: none;
+    }
+
+    p {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    a {
+        text-decoration: none !important;
+    }
+
+    .brand-logo {
+        height: 48px;
+    }
+    .home-logo {
+        height: 180px;
+    }
+
+    .icons {
+        width: 64px;
+        height: 64px;
+        align-self:center;
+    }
+
+    .flags {
+        width: 18px;
+        height: 18px;
+    }
+
+    .flags-text{
+        font-size:12px !important;
+        color:#000;
+    }
+
+    .nav-bar-item-flag{
+    }
+
+    .nav-bar-item-flag:hover{
+        background-color: #f8f9fa !important;
+        padding: 0 3px 3px 3px;
+        border: solid 1px #b0b0b0;
+        border-radius:5px;
+    }
+
+    /*pagina account*/
+    .ale_center{
+        align-items: center !important;
+        display: flex !important;
+        justify-content: center !important;
+        min-height:160px !important;
+}
+
+    .account_card{
+        max-width:540px !important;
+    }
+    .account_card:hover{
+        background-color: #eeeeee !important;
+    }
+
+</style>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary" id=xnavbar>
+  <div class="container-fluid">
+    <%= link_to '/', class: "navbar-item" do %>
+      <%= image_tag "GeKo.svg", class: "brand-logo" %>
+    <% end %>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+        </li>
+      </ul>
+      <form class="d-flex" role="search" style="margin-right:200px;display:none !important;">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+        <div style="display: block">
+        <li class="nav-item dropdown" style="list-style: none;" >
+          <a class="nav-link dropdown-toggle" style="margin-right: 10px;" href="<%= I18n.locale %>" role="button" data-bs-toggle="dropdown" aria-expanded="false"  id="Language">
+            <%= image_tag "#{I18n.locale}.svg", class: "flags" %>
+          </a>
+          <ul class="dropdown-menu" style="background-color: transparent;border:none;width:100px;">
+              <li>
+                <%= link_to(options = {locale: :en}, class: "nav-bar-item-flag" , id: "eng") do %>
+                  <%= image_tag "en.svg", class: "flags" %> <span class="flags-text"   >eng</span>
+                <% end %>
+              </li>
+              <li>
+                <%= link_to(options = {locale: :it}, class: "nav-bar-item-flag", id: "ita") do %>
+                  <%= image_tag "it.svg", class: "flags" %>  <span class="flags-text"   >ita</span>
+                <% end %>
+              </li>
+              <li>
+                <%= link_to(options = {locale: :es}, class: "nav-bar-item-flag", id: "esp") do %>
+                  <%= image_tag "es.svg", class: "flags" %>  <span class="flags-text"   >esp</span>
+                <% end %>
+              </li>
+              <li>
+                <%= link_to(options = {locale: :ja}, class: "nav-bar-item-flag", id: "jap") do %>
+                  <%= image_tag "ja.svg", class: "flags" %>  <span class="flags-text"   >jap</span>
+                <% end %>
+              </li>
+              <li>
+                <%= link_to(options = {locale: :de}, class: "nav-bar-item-flag", id: "deu") do %>
+                  <%= image_tag "de.svg", class: "flags" %>  <span class="flags-text"   >deu</span>
+                <% end %>
+              </li>
+          </ul>
+        </li>
+      </div>
+      <%= render "/layouts/user_menu" %>
+    </div>
+  </div>
+</nav>

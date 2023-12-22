@@ -1,0 +1,25 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  user: alexj
+  password: lencka
+  host: localhost
+  database: geko_dev
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  user: <%= ENV["GEKO_DBUSER"] %>
+  password:  <%= ENV["GEKO_DBPASSWORD"] %>
+  host: localhost
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  database: geko_test
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  user: <%= ENV["GEKO_DBUSER"] %>
+  password:  <%= ENV["GEKO_DBPASSWORD"] %>
+  host: localhost
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 50 } %>
+  database: geko_prod

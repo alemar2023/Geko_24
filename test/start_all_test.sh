@@ -1,0 +1,1 @@
+./do_all_test.sh 2>&1 | tee log_for_all_tests.txt

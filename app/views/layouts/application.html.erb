@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GeKo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+  </head>
+
+  <body>
+  <%= render "/layouts/header" %>
+  <main class="container">
+    <% if notice %>
+      <p id="notice" class="notice" style="margin: 0;padding:0;color:green;"><%= notice%></p>
+    <% elsif alert %>
+      <p  id="alert"  style="color: red !important;"><%= alert %></p>
+    <% end %>
+    <%= yield %>
+  </main>
+  </body>
+</html>
